@@ -5,10 +5,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-50;
     @apply font-sans antialiased;
@@ -41,10 +37,6 @@
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
   .glass {
     @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md;
   }
@@ -54,12 +46,10 @@
   }
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
